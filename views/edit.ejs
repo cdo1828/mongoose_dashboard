@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Edit Penguin</title>
+</head>
+<body>
+	<h1>Edit Penguin</h1>
+
+	<form action=<%= ''+'/update/'+penguins[0]._id+'' %> method='post'>
+		<input type='text' name='name' value=<%=''+penguins[0].name+''%>>
+		<p><%= penguins[0].date %> </p>	
+		<input type='submit' Value='Update Penguin'>
+	</form>
+
+</body>
+</html>

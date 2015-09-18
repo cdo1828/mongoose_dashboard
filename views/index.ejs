@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mongoose Dashboard</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>	
+	<link rel="stylesheet" type="text/css" href="/bootstrap.min.css">	
+</head>
+<body>
+	<a href="/new">New Penguin</a>
+	<h1>Check out our penguins!</h1>
+<% for (var x in penguins) { %>
+	<p> <a href=<%= "/edit/"+''+penguins[x]._id+'' %>> <%= penguins[x].name %> </a> </p>
+	<p><%= penguins[x].date %> </p>
+	<p><%= penguins[x]._id %> </p>
+	
+
+<% } %>
+
+</body>
+</html>
