@@ -1,6 +1,4 @@
-var mongoose = require('mongoose');
-
-var Penguins = mongoose.model('penguins');
+var Penguins = require('../controllers/penguins.js');
 
 
 module.exports = function(app){
